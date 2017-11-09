@@ -61,9 +61,12 @@ while True:
    
    # print out 
    # values rounded to 2 decimals and converted to string
-   subprocess.call(["/usr/bin/mosquitto_pub", "-t", "testi", "-m", 
-                     str(round(mqttstring[0],2))+"°C "+
-                     str(round(mqttstring[1],2))+"F"])
-                     
+   subprocess.call(["/usr/bin/mosquitto_pub", 
+			"-t", "testi", 
+			"-h", "mqtt.datakolmio.net", 
+			"-p", "1883", 
+			"-u", "t5maja03", 
+			"-P", "tvt15smo", 
+			"-m", str(round(mqttstring[0],2))+"°C "+ str(round(mqttstring[1],2))+"F"])
    # polling time 1 sec
    time.sleep(1)
