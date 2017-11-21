@@ -1,0 +1,49 @@
+#ws{
+   
+   text-align:center;
+   font-size:200%;
+   border:1px solid #2196F3;
+   border-radius:2em;
+   background:#2196F3;
+   color:#fff;
+   padding:0.5em
+}
+#wrapper{
+   width:20em;
+   margin-left:auto;
+   margin-right:auto;
+   text-align:center;
+}
+#units {
+   margin-left:auto;
+   margin-right:auto;
+   display:inline-block;
+}
+#units .unit_name{
+   
+   position: relative;
+   margin-bottom:15px;
+   display:inline-block;
+   bottom:5px;
+   font-size:1.5em;
+   font-weight:bold;
+   color:rgb(127,127,127);
+   cursor:pointer;
+}
+#units h3{
+   text-align:center;
+   background:#2196F3;
+   border:1px solid #2196F3;
+   color:#ffffff;
+   border-radius:2em
+   
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#unit{
+    width: 4em;
+}
